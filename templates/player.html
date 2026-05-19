@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>{{player.nome}}</title>
+
+<style>
+
+body{
+
+background:#111;
+
+color:white;
+
+font-family:Arial;
+
+padding:30px;
+
+}
+
+.box{
+
+background:#222;
+
+padding:20px;
+
+border-radius:15px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<a href="/">← voltar</a>
+
+<div class="box">
+
+<h1>{{player.nome}}</h1>
+
+<hr>
+
+💻 Programação:
+{{player.programacao}}
+
+<br><br>
+
+🔌 Hardware:
+{{player.hardware}}
+
+<br><br>
+
+✨ Aura:
+{{player.aura}}
+
+<br><br>
+
+🔥 Burnout:
+{{player.burnout}}
+
+<br><br>
+
+🗣️ Sociabilidade:
+{{player.sociabilidade}}
+
+<br><br>
+
+⚡ Energia:
+{{player.energia}}
+
+<br><br>
+
+🏋️ Força:
+{{player.forca}}
+
+<br><br>
+
+🎭 Características:
+
+<ul>
+
+{% for t in player.traits %}
+
+<li>{{t}}</li>
+
+{% endfor %}
+
+</ul>
+
+<hr>
+
+<h2>Relações</h2>
+<a style="color: burlywood;"  href="/relacoes/{{ player.nome }}">
+Ver relações →
+</a>
+
+
+</div>
+
+</body>
+
+</html>

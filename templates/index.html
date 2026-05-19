@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Robotica Manager</title>
+
+<style>
+
+body{
+background:#111;
+color:white;
+font-family:Arial;
+}
+
+.card{
+
+padding:15px;
+
+margin:10px;
+
+background:#222;
+
+border-radius:10px;
+
+}
+
+a{
+color:#00ff88;
+text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>🎓 Alunos</h1>
+
+{% for p in players %}
+
+<div class="card">
+
+<h3>
+
+<a href="/player/{{ p.nome }}">
+
+{{p.nome}}
+
+</a>
+
+</h3>
+
+Programação:
+{{p.programacao}}
+
+</div>
+
+{% endfor %}
+
+</body>
+
+</html>

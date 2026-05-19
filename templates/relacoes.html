@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<a href="/">← Voltar</a>
+
+<h1>Relações — {{player.nome}}</h1>
+
+{% for nome, valor in player.relacoes.items() %}
+
+<div>
+
+{% if valor >= 70 %}
+🔥
+
+{% elif valor >= 30 %}
+🙂
+
+{% elif valor <= -50 %}
+💀
+
+{% elif valor <= -20 %}
+😡
+
+{% else %}
+😐
+
+{% endif %}
+
+{{nome}} → {{valor}}
+
+</div>
+
+{% endfor %}
+
+</body>
+
+</html>
