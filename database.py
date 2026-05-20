@@ -2,24 +2,24 @@ from player import Player
 import random
 
 nomes = [
-    "Adrian Widmer", "Alexandre Pinto de Souza Ferreira", "Andrei Boulhosa de Sant'anna",
-    "Arthur Ribeiro de Cerqueira", "Breno de Moura Batista", "Caio Schneider Loureiro da Costa",
-    "Charles Moese Lopes de Souza Filho", "Davih de Andrade Machado Borges Santos",
-    "Diogo Rossi Sampaio", "Emanuele Santos Diniz Penteado", "Felipe Emmanouil Martires Stamoglou",
-    "Felipe Spinola Farias", "Flávio Fox Sandes Araújo Fernandes",
-    "Gabriel Campos Santos Pereira", "Gabriel Moreira Barbosa Aragão",
-    "Gabriel Trindade Santana", "Giulia de Jesus Franca", "Gustavo Oliveira Ramos Cruz",
-    "Iago Santana Alfaya", "Icaro Canela Teixeira de Almeida", "João Paulo Caldas Lucas",
-    "João Vitor Fraga de Carvalho Santos", "Jose Auto Araujo Neto",
-    "Júlia Batista Iervese", "Otávio Augusto Coelho Katibe", "Kauã Costa Gouveia",
-    "Leonardo Andrade Gomes Alves", "Levi dos Santos Abreu",
-    "Lucas Breda Lima Mascarenhas", "Lucca Torres Badaró Silvani",
-    "Maria Eduarda Benfica Gonçalves", "Maria Eduarda Cunha Rocha",
-    "Nicolas Almeida Lago", "Nicollas Matsuo Mendes dos Santos",
-    "Pedro Boaventura Ferraz de Oliveira", "Pedro Quadros de Freitas",
-    "Rodrigo Oliveira Peixoto", "Tiago Costa Gomes Vianna",
-    "Victor Mendes Ferreira Bittencourt", "Vitor Lucena Fabianski Campos",
-    "Yasmin da Silva Bonfim"
+    "Adriano Widperador", "Alixandre Pinto", "Andrey Sacana",
+    "Arthur Cerca", "Breno de Moura", "Caio Schneider",
+    "Charles Moese", "Davihhhhh",
+    "Diogo Rossi", "Emanuele Santos", "Felipe Stamina",
+    "Felipe Fatz Farias", "F. Raposo",
+    "Gabriel Fields", "Gabriel Aragão",
+    "Gabriel Santíssima Trindade", "G. Jesus", "Gustavo Cruz",
+    "Iago Alface", "Icaro Cravo e Canela", "João Paulo Caldas",
+    "João Fragrâncias", "Jose Baixo",
+    "Júlia Reverso", "Otávio Katibe", "Kauã Frente",
+    "Leonardo Andrade", "Levi Abril",
+    "Lucas Breda", "Lucca Nine Eleven",
+    "Maria Porto", "Maria Eduarda Rocha",
+    "Nicolas Rio", "Nicollas Matsuo",
+    "Pedro Oliveira", "Pedro Pinturas",
+    "Rodrigo Pedala Peixoto", "Tiago Frente",
+    "Victor Memes", "Vitor Lucena",
+    "Yasmin Bonfim"
 ]
 
 players = []
