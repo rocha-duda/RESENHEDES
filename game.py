@@ -5,7 +5,7 @@ class Game:
 
     def __init__(self, team):
 
-        self.team = team
+        team = team
 
         self.dia = 1
 
@@ -21,11 +21,11 @@ class Game:
 
         print(f"💰 Dinheiro: {self.dinheiro}")
 
-        print(f"🧪 Química: {self.team.calcular_quimica()}")
+        print(f"🧪 Química: {team.calcular_quimica()}")
 
-        print(f"⚔️ Força: {self.team.calcular_forca()}")
+        print(f"⚔️ Força: {team.calcular_forca()}")
 
-        print(f"🌡️ Clima: {self.team.clima_do_time()}")
+        print(f"🌡️ Clima: {team.clima_do_time()}")
 
     def menu_acoes(self):
 
@@ -51,7 +51,7 @@ class Game:
 
             print("\n💻 O time estudou programação.")
 
-            for membro in self.team.membros:
+            for membro in team.membros:
 
                 ganho = random.randint(1, 6)
 
@@ -69,7 +69,7 @@ class Game:
 
             print("\n🏋️ O time foi treinar.")
 
-            for membro in self.team.membros:
+            for membro in team.membros:
 
                 membro.forca += random.randint(1, 5)
 
@@ -92,7 +92,7 @@ class Game:
 
             print("\n😴 O time descansou.")
 
-            for membro in self.team.membros:
+            for membro in team.membros:
 
                 membro.energia += random.randint(10, 25)
 
@@ -106,13 +106,13 @@ class Game:
 
             print("\n🍻 O time saiu pra resenha.")
 
-            for membro in self.team.membros:
+            for membro in team.membros:
 
                 membro.sociabilidade += random.randint(1, 5)
 
             # aumenta relações
-            for player in self.team.membros:
-                for outro in self.team.membros:
+            for player in team.membros:
+                for outro in team.membros:
 
                     if player != outro:
 
@@ -139,7 +139,7 @@ class Game:
 
                     print("\n💀 Era golpe.")
 
-                    for membro in self.team.membros:
+                    for membro in team.membros:
 
                         membro.sanidade -= 10
 
@@ -147,7 +147,7 @@ class Game:
 
                     print("\n🔥 O curso era absurdo.")
 
-                    for membro in self.team.membros:
+                    for membro in team.membros:
 
                         membro.programacao += random.randint(3, 10)
 
@@ -163,7 +163,7 @@ class Game:
 
             print("\n🏆 Participando de hackathon...")
 
-            forca = self.team.calcular_forca()
+            forca = team.calcular_forca()
 
             rival = random.randint(150, 600)
 
@@ -182,7 +182,7 @@ class Game:
 
                 print("\n💀 Derrota humilhante.")
 
-                for membro in self.team.membros:
+                for membro in team.membros:
 
                     membro.burnout += 10
 
@@ -194,7 +194,7 @@ class Game:
 
     def atualizar_estado(self):
 
-        for membro in self.team.membros:
+        for membro in team.membros:
 
             membro.energia = max(0, min(100, membro.energia))
 

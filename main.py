@@ -1,27 +1,13 @@
 from database import players
-
 from team_select import escolher_time
+from resenha import fazer_resenha
 
-from event import EventSystem
-from actions import ActionSystem
-from hackathon import HackathonSystem
+# Importar os sistemas de forma modular
+from systems.events import gerar_evento
+from systems.actions import estudar_programacao, ir_academia, descansar, curso_online
+from systems.hackathon import iniciar_hackathon
 
-
-time_player = escolher_time(
-    players
-)
-
-event_system = EventSystem(
-    time_player
-)
-
-action_system = ActionSystem(
-    time_player
-)
-
-hackathon_system = HackathonSystem(
-    time_player
-)
+time_player = escolher_time(players)
 
 
 while True:
@@ -45,28 +31,28 @@ while True:
     escolha = input("> ")
 
     if escolha == "1":
-        event_system.gerar_evento()
+        gerar_evento(time_player)
 
     elif escolha == "2":
         time_player.mostrar_time()
 
     elif escolha == "3":
-        action_system.estudar_programacao()
+        estudar_programacao(time_player)
 
     elif escolha == "4":
-        action_system.fazer_resenha()
+        fazer_resenha(time_player)
 
     elif escolha == "5":
-        action_system.ir_academia()
+        ir_academia(time_player)
 
     elif escolha == "6":
-        action_system.descansar()
+        descansar(time_player)
 
     elif escolha == "7":
-        action_system.curso_online()
+        curso_online(time_player)
 
     elif escolha == "8":
-        hackathon_system.iniciar_hackathon()
+        iniciar_hackathon(time_player)
 
     elif escolha == "0":
         break

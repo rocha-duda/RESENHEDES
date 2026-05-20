@@ -4,7 +4,7 @@ import random
 class ActionSystem:
 
     def __init__(self, team):
-        self.team = team
+        team = team
 
     # =====================================================
     # ESTUDAR
@@ -14,7 +14,7 @@ class ActionSystem:
 
         print("\n💻 O time decidiu estudar programação.")
 
-        for membro in self.team.membros:
+        for membro in team.membros:
 
             ganho = random.randint(2, 8)
 
@@ -30,22 +30,22 @@ class ActionSystem:
     # RESENHA
     # =====================================================
 
-    def fazer_resenha(self):
+    # def fazer_resenha(self):
 
-        print("\n🍻 O time saiu pra resenha.")
+    #     print("\n🍻 O time saiu pra resenha.")
 
-        for membro in self.team.membros:
+    #     for membro in team.membros:
 
-            membro.sociabilidade += random.randint(1, 5)
+    #         membro.sociabilidade += random.randint(1, 5)
 
-        for a in self.team.membros:
-            for b in self.team.membros:
+    #     for a in team.membros:
+    #         for b in team.membros:
 
-                if a != b:
+    #             if a != b:
 
-                    aumento = random.randint(1, 10)
+    #                 aumento = random.randint(1, 10)
 
-                    a.relacoes[b.nome] += aumento
+    #                 a.relacoes[b.nome] += aumento
 
     # =====================================================
     # ACADEMIA
@@ -55,7 +55,7 @@ class ActionSystem:
 
         print("\n🏋️ O time foi treinar.")
 
-        for membro in self.team.membros:
+        for membro in team.membros:
 
             membro.forca += random.randint(2, 7)
 
@@ -78,7 +78,7 @@ class ActionSystem:
 
         print("\n😴 O time descansou.")
 
-        for membro in self.team.membros:
+        for membro in team.membros:
 
             membro.energia += random.randint(10, 25)
 
@@ -99,7 +99,7 @@ class ActionSystem:
 
             print("\n💀 ERA GOLPE.")
 
-            for membro in self.team.membros:
+            for membro in team.membros:
 
                 membro.aura -= 3
 
@@ -109,7 +109,7 @@ class ActionSystem:
 
             print("\n🔥 O curso era absurdo.")
 
-            for membro in self.team.membros:
+            for membro in team.membros:
 
                 ganho = random.randint(3, 12)
 

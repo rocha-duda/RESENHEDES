@@ -4,11 +4,11 @@ import random
 class EventSystem:
 
     def __init__(self, team):
-        self.team = team
+        team = team
 
     def gerar_evento(self):
 
-        membros = self.team.membros
+        membros = team.membros
 
         if len(membros) < 2:
             return
@@ -57,7 +57,7 @@ class EventSystem:
 
     def evento_resenha(self):
 
-        a, b = random.sample(self.team.membros, 2)
+        a, b = random.sample(team.membros, 2)
 
         falas = [
             f'{a.nome}: "Bora meter um podrão depois da aula?"',
@@ -75,7 +75,7 @@ class EventSystem:
 
     def evento_bug(self):
 
-        pessoa = random.choice(self.team.membros)
+        pessoa = random.choice(team.membros)
 
         print("\n🐛 BUG CRÍTICO")
         print(f'{pessoa.nome}: "O projeto parou de funcionar do nada."')
@@ -85,7 +85,7 @@ class EventSystem:
 
     def evento_gambiarra(self):
 
-        pessoa = random.choice(self.team.membros)
+        pessoa = random.choice(team.membros)
 
         print("\n🛠️ GAMBIARRA")
         print(f'{pessoa.nome}: "Se ninguém tocar no código, funciona."')
@@ -95,7 +95,7 @@ class EventSystem:
 
     def evento_fofoca(self):
 
-        a, b = random.sample(self.team.membros, 2)
+        a, b = random.sample(team.membros, 2)
 
         print("\n🗣️ FOFOCA")
         print(f'{a.nome} espalhou que {b.nome} usa ChatGPT escondido.')
@@ -104,7 +104,7 @@ class EventSystem:
 
     def evento_trairagem(self):
 
-        a, b = random.sample(self.team.membros, 2)
+        a, b = random.sample(team.membros, 2)
 
         print("\n🐍 TRAIRAGEM")
         print(f'{a.nome} jogou a culpa do bug em {b.nome}.')
@@ -114,7 +114,7 @@ class EventSystem:
 
     def evento_colapso_mental(self):
 
-        pessoa = random.choice(self.team.membros)
+        pessoa = random.choice(team.membros)
 
         print("\n💀 COLAPSO")
         print(f'{pessoa.nome}: "EU NÃO AGUENTO MAIS."')
@@ -125,7 +125,7 @@ class EventSystem:
 
     def evento_academia(self):
 
-        pessoa = random.choice(self.team.membros)
+        pessoa = random.choice(team.membros)
 
         print("\n🏋️ ACADEMIA")
         print(f'{pessoa.nome} postou foto no espelho da academia.')

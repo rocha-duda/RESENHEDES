@@ -4,13 +4,13 @@ import random
 class HackathonSystem:
 
     def __init__(self, team):
-        self.team = team
+        team = team
 
     def calcular_forca(self):
 
         total = 0
 
-        for membro in self.team.membros:
+        for membro in team.membros:
 
             poder = (
                 membro.programacao * 0.45 +
@@ -38,7 +38,7 @@ class HackathonSystem:
             total += poder
 
         # química impacta
-        quimica = self.team.calcular_quimica()
+        quimica = team.calcular_quimica()
 
         total += quimica * 1.5
 
@@ -50,7 +50,7 @@ class HackathonSystem:
 
     def evento_hackathon(self):
 
-        membros = self.team.membros
+        membros = team.membros
 
         evento = random.choice([
             "bug",
@@ -186,7 +186,7 @@ class HackathonSystem:
 
             print("\n🏆 VITÓRIA ABSURDA")
 
-            for membro in self.team.membros:
+            for membro in team.membros:
 
                 membro.aura += 15
                 membro.energia -= 10
@@ -195,7 +195,7 @@ class HackathonSystem:
 
             print("\n💀 DERROTA HUMILHANTE")
 
-            for membro in self.team.membros:
+            for membro in team.membros:
 
                 membro.burnout += 15
                 membro.sociabilidade -= 5
